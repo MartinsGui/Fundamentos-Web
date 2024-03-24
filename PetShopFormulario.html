@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styleform.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+    <title>Formulário de Cadastro PetShop</title>
+</head>
+<body>
+    <header id="home">
+        <a href="home.html"><img id="logo" src="./assets/logo pet.png"></a>
+        <nav>
+        <ul>
+            <l1><a href="./indexprodutos.html">Produtos</a></l1>
+            <l1><a href="./indexServico.html">Serviços</a></l1>
+            <l1><a href="./indexCliente.html">Área do Cliente</a></l1>
+        </ul>
+        </nav> 
+    </header>
+    <main>
+        
+        <from action="">
+            <div class="escrito">
+                <h1>Cadastre-se aqui.</h1>
+                <p>Preencha o formulário para criar sua conta.</p>
+            </div>
+
+            
+            <div class="container">
+            <div class="primeiroform">
+                <label for="Nome do Tutor">Nome do Tutor</label>
+                <input type="text" id="NomedoTutor" name="NomedoTutor" required>
+
+                <label for="Nome do Pet">Nome do Pet</label>
+                <input type="text" id="NomedoPet" name="NomedoPet" required>
+
+                <label for="Porte">Porte</label>
+                <input type="text" id="Porte" name="Porte" required>
+
+                <label for="Comportamento">Comportamentor</label>
+                <input type="text" id="Comportamento" name="Comportamento" required>
+
+                <label for="Endereço">Endereço</label>
+                <input type="text" id="Endereço" name="Endereço" required>
+            </div>
+
+            <div class="segundoform">
+                <label for="Nome do Tutor">Nome de Login</label>
+                <input type="text" id="NomedeLogin" name="NomedeLogin" required>
+
+                <label for="Email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="confirmarEmail">Confirmar Email:</label>
+                <input type="email" id="confirmarEmail" name="confirmarEmail" required />
+
+                <label for="Senha">Senha</label>
+                <input type="password" id="NomedoTutor" name="NomedoTutor" required>
+
+                <label for="confirmarSenha">Confirmar Senha:</label>
+                <input type="password" id="confirmarSenha" name="confirmarSenha" required />
+            </div>
+            </div>
+            
+            <a href="./indexCliente.html"><button type="submit">Cadastrar</button></a>
+            
+        </from>
+    
+    </main>
+    <footer>
+        <p>Contato para reclamações ou dúvidas: whatsapp (55)51-96548474</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

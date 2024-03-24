@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./compraProdutos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Compra de Produto</title>
+</head>
+<body>
+    <header id="home">
+        <a href="home.html"><img id="logo" src="./assets/logo pet.png"></a> 
+       <nav>
+        <ul>
+            <l1><a href="./indexprodutos.html">Produtos</a></l1>
+            <l1><a href="./indexServico.html">Serviços</a></l1>
+            <l1><a href="./indexCliente.html">Área do Cliente</a></l1>
+        </ul>
+       </nav> 
+    </header>
+    <aside class="acima">
+        <h1>Compra de Produtos</h1>
+        <div class="login">
+        <h2>Bem vindo/a, nome de login</h2>
+        <img id="userImage" src="https://source.unsplash.com/featured/?face" alt="Rosto da Pessoa" class="user-image">
+        </div>
+    </aside>
+    <main>
+        <section>
+            <div class="produto">
+                <img src="./assets/raçãodecachorro.png" alt="Saco de ração de cachorro.">
+            </div>
+        </section>
+        <aside class="dentro" >
+            
+            <h1>Ração para Cachorro</h1>
+            
+            
+            <h2>Marca Hills</h2>
+            
+            
+            <h3>Descrição</h3>
+            
+            <div class="pp">
+            <p>- Indicada para cães filhotes;</p>
+            <p>- Ideal para pets de raças pequenas e miniatura;</p>
+            <p>- Alimentação completa que proporciona crescimento saudável e equilibrado;</p>
+            <p>- Contém proteínas e fibras de alta qualidade;</p>
+            <p>- Formulada com antioxidantes, ômega 3, vitaminas C e E;</p>
+            <p>- Conta com níveis controlados de cálcio para desenvolvimento ósseo ideal;</p>
+            <p>- Livre de corantes e saborizantes artificiais,</p>
+            <p>- Disponível em embalagem de 800 g, 2,4 kg e 6 kg.</p>
+            </div>
+        <h2>Selecione a quantidade desejada:</h2>
+        <input type="number" id="quantidade" name="quantidade" min="1" value="1">
+        <button onclick="comprar()">Comprar</button>
+        </aside>
+        
+        
+    </main>
+    <script src="./compraProduto.js"></script>
+</body>
+</html>

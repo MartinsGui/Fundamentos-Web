@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./servico.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Serviços</title>
+</head>
+<body>
+    <header id="home">
+        <a href="home.html"><img id="logo" src="./assets/logo pet.png"></a>
+       <nav>
+        <ul>
+            <l1><a href="./indexprodutos.html">Produtos</a></l1>
+            <l1><a href="./indexServico.html">Serviços</a></l1>
+            <l1><a href="./indexCliente.html">Área do Cliente</a></l1>
+        </ul>
+       </nav> 
+    </header>
+    <aside>
+        <h1>Serviços</h1>
+        <div class="login">
+        <h1>Bem vindo/a, nome de login</h1>
+        <img id="userImage" src="https://source.unsplash.com/featured/?face" alt="Rosto da Pessoa" class="user-image">
+        </div>
+    </aside>
+    <main>
+        <div class="titulo">
+            <h3>Selecione o serviço, após a seleção, você não pode esquecer de confimar !!</h3>
+        </div>
+        <section>
+            <div class="buttons">
+                <div class="coluna">
+                <button class="botao-interativo"> <img src="./assets/img banho.png" alt="botão com logo de banho."></button>
+                <button class="botao-interativo"> <img src="./assets/img consulta.png" alt="botão com logo de Consulta."></button>
+                <button class="botao-interativo"> <img src="./assets/img fazendinha.png" alt="botão com logo de hospedagem de pet."></button>
+                </div> 
+                <div class="outracoluna">
+                <button class="botao-interativo"> <img src="./assets/img tele.png" alt="botão com logo de buscar o pet para o serviço."></button>
+                <button class="botao-interativo"> <img src="./assets/img tosa.png" alt="botão com logo de tosar o pet."></button>
+                <button class="botao-interativo"> <img src="./assets/imag vacina.png" alt="botão com logo de vacina ou remédios para o pet."></button>
+                </div>
+            </div>
+            <div class="escolha">
+                <div class="container">
+                    <h1>Campo de Observação</h1>
+                    <textarea id="observacao" placeholder="Digite aqui..." rows="9"></textarea>
+                    
+                </div>
+                <div class="horas">
+                    <h2>Escolha a data e hora:</h2>
+                    <div class="alinhar">
+                    <input type="datetime-local" id="datetime">
+                    
+                    <p id="selectedDateTime"></p>
+                    <div class="novo">
+                    <button id="confirmButton" type="submit">Confirmar</button>
+                    </div>
+                    </div>
+            </div>
+        </section> 
+    </main>
+    <script src="servico.js"></script>
+</body>
+</html>

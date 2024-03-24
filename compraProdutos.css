@@ -1,0 +1,181 @@
+*, :root {
+    font-family: "Inria Sans", sans-serif;
+    font-size: 62.5%;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Inter', sans-serif;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    
+    font-family: 'Inria Sans', sans-serif;
+
+    width: 100%;
+    height: 100%;
+    background-color: #68AA51;
+
+}
+header{
+    
+    display: flex;
+    font-size: 22.0rem;
+    background-color: #BBBB;
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 100px;
+
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+
+
+    
+}
+header #logo{
+    margin: 210px 0 0 70px;
+}
+header img{
+    
+    height: 330px;
+    margin: 75px 0 0 75px;
+}
+
+
+nav ul{
+    font-family: 'Inria Sans', sans-serif;
+    display: flex;
+    flex-direction: row;
+    gap: 85px;
+    margin-right: 85px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: beige;
+    text-shadow: 5px 5px 5px rgba(8,8,8,10);
+    
+}
+.acima{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16rem;
+}
+.acima h1{
+    font-size: 5rem;
+    margin-left: 25rem;
+}
+.login h2{
+    font-size: 4rem;
+    margin-right: 2rem;
+}
+
+.login{
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+.user-image {
+    width: 60px; /* Ou o tamanho que você preferir */
+    height: 60px; /* Igual à largura para manter o aspecto de círculo */
+    border-radius: 50%; /* Isso cria o efeito de círculo */
+    margin-left: 15px; /* Espaço entre o texto e a imagem */
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    
+    height: 734px;
+    background-color: rgb(255, 255, 255);
+    margin: 5rem 5rem 0 5rem;
+    border-radius: 3rem 3rem 0 0;
+
+    
+}
+section{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+section .produto img{
+    width: 150px;
+    height: 300px;
+    margin-right: 15rem;
+    justify-content: center;
+
+}
+
+.dentro{
+    display: flex;
+    flex-direction: column;
+    
+    
+    width: 400px;
+    height: 400px;
+    gap: 1rem;
+    
+
+
+}
+.dentro h1{
+    font-weight: bold;
+    font-size: 4rem ;
+    width: 700px;
+    margin-top: 15rem;
+}
+.dentro h2{
+    font-size: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+.dentro h3{
+    font-size: 2rem;
+}
+.dentro p{
+    font-size: 2rem;
+    width: 800px;
+}
+.pp{
+    gap: 1rem;
+}
+
+
+
+
+
+/* Estilos para o campo de quantidade e o botão */
+#quantidade,
+button {
+    padding: 10px 20px; /* Ajuste o padding conforme necessário */
+    font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    border: 1px solid black; /* Remove a borda */
+    background-color: #4caf4f9c; /* Cor de fundo do botão */
+    color: rgb(10, 10, 10); /* Cor do texto do botão */
+}
+button:hover{
+    background-color: #65db3a;
+}
+
+/* Estilo para centralizar o botão */
+main {
+    display: flex;
+    justify-content: center;
+}

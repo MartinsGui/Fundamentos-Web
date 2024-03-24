@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./compraProdutos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Compra de Produto</title>
+</head>
+<body>
+    <header id="home">
+        <a href="home.html"><img id="logo" src="./assets/logo pet.png"></a> 
+       <nav>
+        <ul>
+            <l1><a href="./indexprodutos.html">Produtos</a></l1>
+            <l1><a href="./indexServico.html">Serviços</a></l1>
+            <l1><a href="./indexCliente.html">Área do Cliente</a></l1>
+        </ul>
+       </nav> 
+    </header>
+    <aside class="acima">
+        <h1>Compra de Produtos</h1>
+        <div class="login">
+        <h2>Bem vindo/a, nome de login</h2>
+        <img id="userImage" src="https://source.unsplash.com/featured/?face" alt="Rosto da Pessoa" class="user-image">
+        </div>
+    </aside>
+    <main>
+        <section>
+            <div class="produto">
+                <img src="./assets/ração de gato.png" alt="Sache de gato.">
+            </div>
+        </section>
+        <aside class="dentro" >
+            
+            <h1>Ração Humida</h1>
+            
+            
+            <h2>Marca Wiskas</h2>
+            
+            
+            <h3>Descrição</h3>
+            
+            <div class="pp">
+            <p>-Indicada para gatos;</p>
+            <p>- Refeição completa e balanceada;</p>
+            <p>- Feita com ingredientes naturais de alta qualidade, vitaminas e minerais;</p>
+            <p>- Sem conservantes, sem corantes artificiais e sem aromatizantes artificiais;</p>
+            <p>- Suculentos pedacinhos cozidos a vapor;</p>
+            <p>- Ajuda a manter a saúde do trato urinário;</p>
+            <p>- Ajuda na manutenção do peso;</p>
+            <p>- Porção ideal de proteína, vitaminas e sais minerais;</p>
+            </div>
+        <h2>Selecione a quantidade desejada:</h2>
+        <input type="number" id="quantidade" name="quantidade" min="1" value="1">
+        <button onclick="comprar()">Comprar</button>
+        </aside>
+        
+        
+    </main>
+    <script src="./compraProduto.js"></script>
+</body>
+</html>

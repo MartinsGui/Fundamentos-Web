@@ -1,0 +1,264 @@
+*, :root {
+    font-family: "Inria Sans", sans-serif;
+    font-size: 62.5%;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Inter', sans-serif;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    
+    font-family: 'Inria Sans', sans-serif;
+
+    width: 100%;
+    height: 100%;
+    background-color: #68AA51;
+
+}
+header{
+    
+    display: flex;
+    font-size: 22.0rem;
+    background-color: #BBBB;
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 100px;
+
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+
+
+    
+}
+header #logo{
+    margin: 210px 0 0 70px;
+}
+header img{
+    
+    height: 330px;
+    margin: 75px 0 0 75px;
+}
+
+
+nav ul{
+    font-family: 'Inria Sans', sans-serif;
+    display: flex;
+    flex-direction: row;
+    gap: 85px;
+    margin-right: 85px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: beige;
+    text-shadow: 5px 5px 5px rgba(8,8,8,10);
+    
+}
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    
+    
+    height: 80%;
+    background-color: rgb(255, 255, 255);
+    margin: 5rem 5rem 0 5rem;
+    border-radius: 3rem 3rem 0 0;
+
+    margin: 4rem 18rem 0 18rem;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+}
+
+aside{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16rem;
+}
+aside h1{
+    font-size: 5rem;
+    margin-left: 25rem;
+}
+.login h1{
+    font-size: 4rem;
+    margin-right: 2rem;
+}
+
+.login{
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+.user-image {
+    width: 60px; /* Ou o tamanho que você preferir */
+    height: 60px; /* Igual à largura para manter o aspecto de círculo */
+    border-radius: 50%; /* Isso cria o efeito de círculo */
+    margin-left: 15px; /* Espaço entre o texto e a imagem */
+}
+h3{
+    font-size: 3rem;
+    margin-right: 2rem;  
+    display: flex;
+    margin-top: 5rem;
+    width: 1049px;
+    height: 60px;
+}
+.buttons{
+    display: flex;
+    justify-content: start;
+    border: none;
+    gap: 2rem;
+    padding: 15rem; 
+     
+    
+
+}
+
+
+.coluna{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+}
+.outracoluna{
+    display: flex;
+    outline: none;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.coluna {
+    height: auto;
+    background-color: transparent;
+}
+.botao-interativo {
+    border: 2px solid black;
+    outline: none; /* Remover contorno do botão */
+    padding: 0; /* Remover preenchimento */
+    cursor: pointer;
+    background-color: transparent; /* Cor de fundo transparente */
+    border-radius: 15%; /* Tornar o botão completamente arredondado */
+    overflow: hidden; /* Garantir que a imagem dentro do botão não transborde */
+    height: auto;
+    margin: auto; /* Centralizar a imagem verticalmente */
+}
+
+.botao-interativo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    filter: brightness(80%); /* Aplicar filtro de brilho inicial */
+    transition: filter 0.5s; /* Adicionar transição para suavizar a mudança */
+}
+
+.botao-interativo.clicked img {
+    filter: brightness(30%); /* Ajustar filtro de brilho quando o botão é clicado */
+    transition: filter 0.5s; /* Adicionar transição para suavizar a mudança */
+}
+.escolha{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.container h1{
+    font-size: 3rem ;
+}
+.horas{
+    gap: 8rem;
+    
+}
+.alinhar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3rem;
+}
+.novo button{
+    width: 180px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border-radius: 20px;
+    background-color: #68AA51;
+    border: 2px solid black;
+}
+.novo button:hover{
+    border: 2px solid white;
+    background-color: #67e739;
+}
+.escolha h1, h2{
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+#observacao {
+    height: 300px; 
+    width: 700px;
+    font-size: 18px;
+    border-radius: 15px;
+    line-height: 2.5;
+    padding: 2rem;
+    max-width: 703px; /* largura da caixa de entrada */
+    min-width: 702px;
+    min-height: 198px;
+    max-height: 199px;
+    
+}
+
+#datetime {
+    max-width: 300px; /* largura da caixa de entrada */
+    
+    height: 100px;
+    font-size: 18px;
+    align-items:center;
+    text-align: center;
+    border-radius: 15px;
+    line-height: 2.5
+}
+
+
+#observacao placeholder{
+    font-size: 1rem;
+}
+.container .novobotão{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
+
+
+
+
