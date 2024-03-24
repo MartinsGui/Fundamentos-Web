@@ -5,7 +5,7 @@ Projeto individual disciplina de Fundamentos de Sistemas Web - PUCRS
 </p>
 
 <p align="center">
-  <img alt="PUCRS" src="./READ/projetoprint.png" width="90%">
+  <img alt="PUCRS" src="./Read/projetoprint.png" width="90%">
 </p>
 
 
