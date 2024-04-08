@@ -86,8 +86,7 @@ main h1{
     margin: 8rem;
 
     font-size: 4rem;
-    font-weight: bold;
-    border-bottom: 3px solid rgb(154, 153, 153);
+    
     margin-bottom: 1rem;
 }
 
@@ -152,10 +151,10 @@ aside h1{
 }
 
 /* Estilos para cada caixa de produto */
-.produto {
+.produto{
     flex: 0 0 auto; /* Garante que cada produto tenha tamanho fixo */
-    width: 130px; /* Largura fixa para cada produto */
-    height: 200px;
+    width: 160px; /* Largura fixa para cada produto */
+    height: 280px;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 20px;
@@ -171,7 +170,8 @@ aside h1{
     transform: scale(1.1); /* Aumenta o tamanho do produto em 10% ao passar o mouse sobre ele */
 }
 
-.produto h3{
+
+.produto,h3{
 
 
     font-size: 1rem;
@@ -237,13 +237,12 @@ button:hover{
     width: 100%; /* Garante que os contêineres dos produtos ocupem toda a largura */
     display: inline-block; /* Mantém os produtos em linha */
     transition: transform 1s ease;
+    display: flex;
+    justify-content: space-around;
+
 }
 
-.produto {
-    display: inline-block; /* Mantém os produtos em linha */
-    vertical-align: top; /* Alinha os produtos no topo */
-    margin-right: 10px; /* Espaçamento entre os produtos */
-}
+
 
 .nav-buttons {
     display: flex;
@@ -255,5 +254,38 @@ button:hover{
     font-size: 24px; /* Ajuste o tamanho das setas conforme necessário */
 }
 
+.produto img {
+    max-width: 100%; /* Define a largura máxima para a imagem */
+    max-height: 100%; /* Define a altura máxima para a imagem */
+    display: block; /* Garante que a imagem não exceda o contêiner */
+    margin: auto; /* Centraliza a imagem dentro do contêiner */
+}
+.saco{
+    display: flex;
+    justify-content: center;
+}
 
+main .cabeca{
+    display: flex;
+    
+}
+
+.cabeca{
+    
+    margin: 8rem;
+    font-size: 4rem;
+    font-weight: bold;
+    border-bottom: 3px solid rgb(154, 153, 153);
+    margin-bottom: 1rem;
+}
+
+.cabeca span{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    
+    margin: 9rem 0 0 0;
+    
+    margin-bottom: 1rem;
+}
 

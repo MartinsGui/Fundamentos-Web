@@ -13,18 +13,18 @@
 </head>
 <body>
     <header id="home">
-        <a href="home.html"><img id="logo" src="./assets/logo pet.png"></a>
+        <a href="index.html"><img id="logo" src="./assets/logo pet.png"></a>
         <nav>
         <ul>
-            <l1><a href="./indexprodutos.html">Produtos</a></l1>
-            <l1><a href="./indexServico.html">Serviços</a></l1>
-            <l1><a href="./indexCliente.html">Área do Cliente</a></l1>
+            <li><a href="./indexprodutos.html">Produtos</a></li>
+            <li><a href="./indexServico.html">Serviços</a></li>
+            <li><a href="./indexCliente.html">Área do Cliente</a></li>
         </ul>
         </nav> 
     </header>
     <main>
         
-        <from action="">
+        <form id="myForm" action="javascript:void(0);" onsubmit="saveFormDataAndRedirect()">
             <div class="escrito">
                 <h1>Cadastre-se aqui.</h1>
                 <p>Preencha o formulário para criar sua conta.</p>
@@ -47,6 +47,9 @@
 
                 <label for="Endereço">Endereço</label>
                 <input type="text" id="Endereço" name="Endereço" required>
+
+                <label for="Telefone">Telefone</label>
+                <input type="tel" id="Telefone" name="Telefone" pattern="[0-9]{10,11}" title="Por favor, insira um número de telefone válido (apenas números)" required>
             </div>
 
             <div class="segundoform">
@@ -60,21 +63,29 @@
                 <input type="email" id="confirmarEmail" name="confirmarEmail" required />
 
                 <label for="Senha">Senha</label>
-                <input type="password" id="NomedoTutor" name="NomedoTutor" required>
+                <input type="password" id="Senha" name="Senha" required>
 
                 <label for="confirmarSenha">Confirmar Senha:</label>
                 <input type="password" id="confirmarSenha" name="confirmarSenha" required />
+
+                <label>Qual o seu animal?</label><br>
+                <div id="animal">
+                    <input type="radio" id="gato" name="animal" value="gato" required>
+                    <label for="gato">Gato</label><br>
+                    <input type="radio" id="cachorro" name="animal" value="cachorro" required>
+                    <label for="cachorro">Cachorro</label><br>
+                </div>
             </div>
             </div>
             
-            <a href="./indexCliente.html"><button type="submit">Cadastrar</button></a>
+            <button type="submit">Cadastrar</button>
             
-        </from>
+        </form>
     
     </main>
     <footer>
         <p>Contato para reclamações ou dúvidas: whatsapp (55)51-96548474</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>

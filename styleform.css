@@ -121,7 +121,7 @@ main{
     
     border-radius: 3rem 3rem 0 0;
     margin: 4rem 18rem 0 18rem;
-    height: 694px;
+    height: 80%;
     
     
 }
@@ -193,7 +193,8 @@ input{
 
 input[type="text"],
 input[type="email"],
-input[type="password"]{
+input[type="password"],
+input[type="tel"]{
     width: 100%;
     width: 100%;
     padding: 10px;
@@ -218,4 +219,9 @@ footer{
 
 footer p{
     font-size: 1.5rem;
+}
+
+#animal {
+    display: flex;
+    gap: 1rem;
 }

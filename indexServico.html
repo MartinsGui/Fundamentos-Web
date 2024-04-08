@@ -11,7 +11,7 @@
 </head>
 <body>
     <header id="home">
-        <a href="home.html"><img id="logo" src="./assets/logo pet.png"></a>
+        <a href="index.html"><img id="logo" src="./assets/logo pet.png"></a>
        <nav>
         <ul>
             <l1><a href="./indexprodutos.html">Produtos</a></l1>
@@ -33,17 +33,33 @@
         </div>
         <section>
             <div class="buttons">
-                <div class="coluna">
-                <button class="botao-interativo"> <img src="./assets/img banho.png" alt="botão com logo de banho."></button>
-                <button class="botao-interativo"> <img src="./assets/img consulta.png" alt="botão com logo de Consulta."></button>
-                <button class="botao-interativo"> <img src="./assets/img fazendinha.png" alt="botão com logo de hospedagem de pet."></button>
-                </div> 
-                <div class="outracoluna">
-                <button class="botao-interativo"> <img src="./assets/img tele.png" alt="botão com logo de buscar o pet para o serviço."></button>
-                <button class="botao-interativo"> <img src="./assets/img tosa.png" alt="botão com logo de tosar o pet."></button>
-                <button class="botao-interativo"> <img src="./assets/imag vacina.png" alt="botão com logo de vacina ou remédios para o pet."></button>
+                <div class="botoes">
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupSelect01">Tipo</label>
+                        <select class="form-select" id="inputGroupSelect01">
+                            <option selected>Cachorro</option>
+                            <option value="1">Gato</option>
+                        </select>
+                    </div>
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupSelect01">Porte</label>
+                        <select class="form-select" id="inputGroupSelect01">
+                            <option selected>Grande</option>
+                            <option>Medio</option>
+                            <option>Pequeno</option>
+                        </select>
+                    </div>
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupSelect01">Serviço</label>
+                        <select class="form-select" id="inputGroupSelect01">
+                            <option selected>Banho e Tosa | Valor R$ 80.00</option>
+                            <option>Tosa Higiênica | Valor R$ 60.00</option>
+                            <option>Consulta | Valor R$ 100.00</option>
+                            <option>Estadia | Valor R$ 80.00 / diaria</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
+                
             <div class="escolha">
                 <div class="container">
                     <h1>Campo de Observação</h1>
@@ -57,6 +73,12 @@
                     
                     <p id="selectedDateTime"></p>
                     <div class="novo">
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Deseja tele-busca? 
+                            </label>
+                        </div>
                     <button id="confirmButton" type="submit">Confirmar</button>
                     </div>
                     </div>
